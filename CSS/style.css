@@ -1,10 +1,12 @@
-* {
+*, 
+*::after,
+*::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 html {
-    font-size: 10px;
+    font-size: 62.5%;
 }
  
 body {
@@ -14,9 +16,10 @@ body {
      line-height: 1.7;
      color: #777;
      padding: 3rem;
+     box-sizing: border-box;
  }
 
- .header-section {
+ .header {
      height: 95vh;
      background-image: linear-gradient(
          to bottom, 
@@ -30,7 +33,7 @@ body {
      clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%);
  }
 
- .logo-icon {
+ .logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem;   
@@ -48,13 +51,13 @@ body {
     text-align: center;
 }
 
-.heading-section {
+.heading-primary {
     color: #fff;
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 6rem;
 }
-.heading-section-main {
+.heading-primary-main {
     display:block;
     font-size: 6rem;
     font-weight: 400;
@@ -63,7 +66,7 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-out;
 }
-.heading-section-sub {
+.heading-primary-sub {
     display: block;
     font-size: 2rem; 
     font-weight: 700;
@@ -107,8 +110,8 @@ body {
         transform: translateX(0);
     }
 }
-.button:link,
-.button:visited {
+.btn:link,
+.btn:visited {
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 4rem;
@@ -116,13 +119,14 @@ body {
     border-radius: 10rem;
     transition: all .2s;
     position: relative;
+    font-size: 1.6rem;
     animation: moveInBottom 1s ease-out;
 }
-.button:hover {
+.btn:hover {
     transform: translateY(-3px);
     box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.2);
 }
-.button:active {
+.btn:active {
     transform: translateY(-1px);
     box-shadow: 0px .5rem 1rem rgba(0, 0, 0, 0.2);
 }
@@ -130,7 +134,7 @@ body {
     background-color: #fff;
     color: #777;
 }
-.button::after {
+.btn::after {
     content: "";
     display: inline-block;
     height: 100%;
@@ -145,7 +149,7 @@ body {
 .button-white::after {
     background-color: #fff;
 }
-.button:hover::after {
+.btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
