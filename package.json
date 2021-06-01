@@ -1,8 +1,12 @@
 {
   "name": "natours",
   "version": "1.0.0",
-  "description": "landing page for Natours",
+  "description": "landing page of Natours",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  },
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
@@ -10,13 +14,10 @@
     "type": "git",
     "url": "git+https://github.com/johnpersie/Advance-CSS-Project.git"
   },
-  "author": "Johnpersie",
+  "author": "johnpersie",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/johnpersie/Advance-CSS-Project/issues"
   },
-  "homepage": "https://github.com/johnpersie/Advance-CSS-Project#readme",
-  "devDependencies": {
-    "node-sass": "^6.0.0"
-  }
+  "homepage": "https://github.com/johnpersie/Advance-CSS-Project#readme"
 }
