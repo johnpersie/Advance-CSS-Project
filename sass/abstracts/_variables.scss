@@ -3,6 +3,12 @@ $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+ 
 $color-grey-dark: #777;
 $color-grey-light: #f7f7f7;
 $color-white: #fff;
@@ -15,3 +21,12 @@ $default-font-size: 1.6rem;
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
+
+// BOX-SHADOWS
+$box-shadow-1: 0 1.5rem 4rem rgba($color-black, .15);
+$box-shadow-2: 0 2.5rem 4rem rgba($color-black, .5);
+$box-shadow-3: 0 1.5rem 4rem rgba($color-black, .4);
+$box-shadow-4: 0 .5rem 1rem rgba($color-black, .15);
+$box-shadow-5: 0 1rem 2rem rgba($color-black, .15);
+$box-shadow-6: 0px .5rem 1rem rgba($color-black, 0.2);
+$box-shadow-7: 0px 1rem 2rem rgba($color-black, 0.2);
